@@ -1,11 +1,19 @@
-class P:
+class D:
     def foo(self):
-        print("P")
+        print("P3")
 
-
-class B(P):
+class A(D):
     def foo(self):
-        print("B")
+        print("P1")
 
-a = B()
+class B:
+    def foo(self):
+        print("P2")
+
+
+class C(A,B):
+    def foo1(self):
+        print("P4")
+
+a = C()
 a.foo()

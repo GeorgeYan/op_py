@@ -5,7 +5,7 @@ class P
 
 end
 
-class B
+class B < P
   def foo
     p "B"
   end
